@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from './common/header/Header.js';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    
-  </React.StrictMode>,
+  <Header />
+  ,
   document.getElementById('root')
 );
 
