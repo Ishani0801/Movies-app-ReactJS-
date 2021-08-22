@@ -1,17 +1,18 @@
-.header {
+.header{
     background-color: #222;
     height: 36px;
-    padding: 8px 32px 8px 16px;
+    padding: 8px 32px 8px 16px ;
+    display: flex;
+    justify-content: space-between;
 }
-
-.App-logo {
+.svg{
     background-color: #ff7f7f;
     height: 35px;
-    animation: spin 8s linear infinite;
+    text-align: left;
+    animation: rotate 8s linear infinite;
 }
-
-@keyframes spin { 
-    100% { 
-        transform: ScaleX(-1); 
-    } 
-} 
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
