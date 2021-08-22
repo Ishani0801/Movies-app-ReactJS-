@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import Details from "./common/Details/Details";
+import Details from "./common/Details/Details";
 import home from "./screens/home/Home"
 import BookShow from './screens/bookshow/BookShow';
 
@@ -10,12 +10,11 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={home} />
-      {/* <Route path="/details/:id" component={Details} />
-      <Route path="/bookshow" component={BookShow} /> */}
+      <Route path="/details/:id" component={Details} />
+      <Route path="/bookshow" component={BookShow} />
       </Switch>
   </BrowserRouter>
   ,
-  //hggghjgh
   document.getElementById('root')
 );
 
